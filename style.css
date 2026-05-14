@@ -1586,3 +1586,29 @@ img{
     }
 
 }
+/* SMALLER MOBILE NAV BUTTON */
+
+@media(max-width:700px){
+
+    .nav{
+        gap:10px !important;
+        padding:14px !important;
+    }
+
+    .brand img{
+        width:62px !important;
+        min-width:62px !important;
+    }
+
+    .brand span{
+        font-size:20px !important;
+        max-width:190px !important;
+    }
+
+    .nav-call{
+        font-size:15px !important;
+        padding:13px 15px !important;
+        border-radius:16px !important;
+        white-space:nowrap !important;
+    }
+}
