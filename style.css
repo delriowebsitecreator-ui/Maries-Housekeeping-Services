@@ -1674,8 +1674,8 @@ img{
 .lang-toggle{
     position:fixed !important;
 
-    right:3% !important;
-    top:42% !important;
+    right:-18% !important;
+    top:300% !important;
 
     transform:translateY(-50%);
 
