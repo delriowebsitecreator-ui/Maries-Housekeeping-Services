@@ -1622,3 +1622,24 @@ img{
     }
 
 }
+.lang-toggle{
+    border:none;
+    background:white;
+    color:#5c2c91;
+    padding:12px 18px;
+    border-radius:14px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.lang-toggle:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:700px){
+    .lang-toggle{
+        font-size:13px;
+        padding:10px 12px;
+    }
+}
