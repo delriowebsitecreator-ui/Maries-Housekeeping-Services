@@ -1087,3 +1087,502 @@ footer{
     }
 
 }
+/* FINAL MOBILE FIXES */
+
+@media(max-width:700px){
+
+    body{
+        background:#faf7ff;
+    }
+
+    .promo-bar{
+        font-size:12px;
+        padding:10px 14px;
+    }
+
+    .nav{
+        width:92%;
+        margin:14px auto;
+        padding:12px 14px;
+        border-radius:18px;
+        top:10px;
+    }
+
+    .brand{
+        gap:8px;
+        font-size:13px;
+    }
+
+    .brand img{
+        width:42px;
+    }
+
+    .nav-call{
+        padding:10px 14px;
+        font-size:13px;
+        border-radius:12px;
+    }
+
+    .hero{
+        width:92%;
+        margin:35px auto 70px auto;
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+        text-align:left;
+    }
+
+    .eyebrow{
+        font-size:12px;
+        padding:8px 12px;
+        margin-bottom:18px;
+    }
+
+    .hero h1{
+        font-size:42px;
+        line-height:1;
+        letter-spacing:-1.5px;
+        margin-bottom:20px;
+    }
+
+    .hero p{
+        font-size:16px;
+        line-height:1.65;
+        max-width:100%;
+        margin-bottom:28px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        gap:12px;
+        margin-bottom:28px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+        padding:15px 20px;
+        border-radius:14px;
+    }
+
+    .trust-row{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .trust-row div{
+        width:100%;
+        min-width:0;
+        padding:18px;
+    }
+
+    .hero-visual::before{
+        width:280px;
+        height:280px;
+    }
+
+    .photo-card{
+        border-radius:24px;
+    }
+
+    .floating-card{
+        position:relative !important;
+        left:auto !important;
+        bottom:auto !important;
+        margin-top:16px;
+        max-width:100%;
+        width:100%;
+    }
+
+    .trust-strip{
+        width:92%;
+        margin:0 auto 70px auto;
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .section{
+        width:92%;
+        margin:80px auto;
+    }
+
+    .section-heading{
+        margin-bottom:35px;
+        text-align:left;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+        line-height:1.1;
+        max-width:100%;
+    }
+
+    .features-grid,
+    .services-grid,
+    .process-grid,
+    .testimonial-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .feature-card,
+    .service-card,
+    .process-step,
+    .testimonial-card{
+        padding:26px;
+        border-radius:24px;
+    }
+
+    .split,
+    .airbnb{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .split-content h2,
+    .airbnb-content h2{
+        font-size:34px;
+        line-height:1.1;
+    }
+
+    .split-content p,
+    .airbnb-content p{
+        max-width:100%;
+        font-size:16px;
+    }
+
+    .split-image img,
+    .airbnb-photo img{
+        border-radius:24px;
+    }
+
+    .mini-grid{
+        grid-template-columns:1fr;
+    }
+
+    .loyalty{
+        width:92%;
+        margin:80px auto;
+        padding:34px 24px;
+        border-radius:28px;
+        text-align:left;
+    }
+
+    .loyalty h2{
+        font-size:34px;
+        line-height:1.1;
+    }
+
+    .reward-box{
+        width:100%;
+        min-width:0;
+        padding:28px;
+    }
+
+    .reward-box h3{
+        font-size:42px;
+    }
+
+    .area-list{
+        justify-content:flex-start;
+    }
+
+    .area-list span{
+        width:100%;
+        text-align:center;
+    }
+
+    .contact{
+        width:92%;
+        margin:80px auto;
+    }
+
+    .contact-card{
+        padding:38px 24px;
+        border-radius:28px;
+        text-align:left;
+    }
+
+    .contact-card h2{
+        font-size:34px;
+        line-height:1.1;
+    }
+
+    .contact-actions{
+        flex-direction:column;
+    }
+
+    .footer{
+        margin-top:80px;
+        padding:50px 24px 90px 24px;
+    }
+
+    .footer-top{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .footer-brand img{
+        width:170px;
+    }
+
+    .floating-actions{
+        left:12px;
+        right:12px;
+        bottom:12px;
+        flex-direction:row;
+    }
+
+    .floating-actions a{
+        flex:1;
+        text-align:center;
+        padding:13px 10px;
+        font-size:13px;
+    }
+}
+/* EMERGENCY MOBILE CLEANUP */
+
+@media(max-width:700px){
+
+    body{
+        width:100%;
+        overflow-x:hidden !important;
+    }
+
+    .promo-bar{
+        width:100%;
+        font-size:13px;
+        line-height:1.5;
+        padding:12px 18px;
+    }
+
+    .nav{
+        position:relative !important;
+        top:auto !important;
+        width:92% !important;
+        margin:18px auto 40px auto !important;
+        display:flex;
+        gap:14px;
+        border-radius:28px;
+    }
+
+    .brand{
+        flex:1;
+        min-width:0;
+    }
+
+    .brand img{
+        width:70px !important;
+        height:auto;
+        object-fit:contain;
+    }
+
+    .brand span{
+        font-size:22px;
+        line-height:1.15;
+    }
+
+    .nav-call{
+        flex-shrink:0;
+        padding:18px 22px;
+        font-size:20px;
+        border-radius:20px;
+    }
+
+    .hero{
+        display:flex !important;
+        flex-direction:column !important;
+        width:92% !important;
+        margin:40px auto 70px auto !important;
+        gap:40px !important;
+        overflow:hidden;
+    }
+
+    .hero h1{
+        font-size:46px !important;
+        line-height:1.02 !important;
+        letter-spacing:-1px !important;
+    }
+
+    .hero p{
+        font-size:18px !important;
+        line-height:1.7 !important;
+    }
+
+    .hero-actions{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-actions .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-visual{
+        width:100%;
+        overflow:visible;
+    }
+
+    .photo-card{
+        width:100% !important;
+        border-radius:28px !important;
+    }
+
+    .floating-card{
+        position:relative !important;
+        left:auto !important;
+        bottom:auto !important;
+        width:100% !important;
+        max-width:100% !important;
+        margin-top:18px !important;
+        padding:26px !important;
+        border-radius:28px !important;
+    }
+
+    .floating-card strong{
+        font-size:22px;
+        line-height:1.5;
+    }
+
+    .trust-strip{
+        width:92% !important;
+        margin:40px auto 70px auto !important;
+        grid-template-columns:1fr !important;
+    }
+
+    .section{
+        width:92% !important;
+        margin:80px auto !important;
+        overflow:hidden;
+    }
+
+    .features-grid,
+    .services-grid,
+    .process-grid,
+    .testimonial-grid,
+    .mini-grid{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+    }
+
+    .feature-card,
+    .service-card,
+    .process-step,
+    .testimonial-card,
+    .mini-grid div{
+        width:100% !important;
+        padding:28px !important;
+    }
+
+    .split,
+    .airbnb{
+        display:flex !important;
+        flex-direction:column !important;
+    }
+
+    .split-content h2,
+    .airbnb-content h2,
+    .section-heading h2,
+    .loyalty h2,
+    .contact-card h2{
+        font-size:34px !important;
+        line-height:1.12 !important;
+    }
+
+    .loyalty,
+    .contact-card{
+        width:92% !important;
+        margin:80px auto !important;
+        padding:36px 24px !important;
+        border-radius:30px !important;
+    }
+
+    .reward-box{
+        min-width:0 !important;
+        width:100% !important;
+    }
+
+    .footer{
+        text-align:center;
+        padding:50px 24px 100px 24px !important;
+    }
+
+    .footer-top{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+    }
+
+    .footer-brand img{
+        width:220px !important;
+        max-width:80%;
+    }
+
+    .floating-actions{
+        left:12px !important;
+        right:12px !important;
+        bottom:12px !important;
+        flex-direction:row !important;
+    }
+}
+/* HARD MOBILE OVERFLOW FIX */
+
+html,
+body{
+    max-width:100%;
+    overflow-x:hidden !important;
+}
+
+img{
+    max-width:100%;
+}
+
+@media(max-width:700px){
+
+    *{
+        max-width:100%;
+    }
+
+    .hero{
+        overflow:hidden !important;
+    }
+
+    .hero-visual{
+        display:block !important;
+        width:100% !important;
+        overflow:hidden !important;
+    }
+
+    .main-photo{
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .photo-card img{
+        width:100% !important;
+        height:auto !important;
+        object-fit:cover;
+    }
+
+    .floating-card{
+        position:static !important;
+        width:100% !important;
+        margin-top:16px !important;
+        transform:none !important;
+    }
+
+    .hero-visual::before{
+        display:none !important;
+    }
+
+    .nav,
+    .trust-strip,
+    .section,
+    .loyalty,
+    .contact{
+        max-width:92% !important;
+    }
+
+}
