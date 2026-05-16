@@ -254,10 +254,10 @@ body{
 }
 .hero-visual{
     position:relative;
-
     display:flex;
     justify-content:center;
     align-items:center;
+    gap:24px;
 }
 .hero-visual::before{
     content:"";
@@ -279,15 +279,15 @@ body{
     animation:floatGlow 6s ease-in-out infinite;
 }
 .photo-card{
-    .photo-card:hover{
-    transform:translateY(-6px) rotate(-1deg);
-}
+    width:420px;
     border-radius:36px;
     overflow:hidden;
     transition:.4s;
+    box-shadow:0 30px 80px rgba(92,44,145,0.18);
+}
 
-    box-shadow:
-    0 30px 80px rgba(92,44,145,0.18);
+.photo-card:hover{
+    transform:translateY(-6px) rotate(-1deg);
 }
 
 .photo-card img{
@@ -296,29 +296,24 @@ body{
 }
 
 .floating-card{
-    position:absolute;
+    position:relative;
 
-    bottom:-30px;
-    left:-40px;
+    bottom:auto;
+    left:auto;
 
-    background:
-    rgba(255,255,255,0.45);
+    width:230px;
+    max-width:230px;
 
+    background:rgba(255,255,255,0.55);
     backdrop-filter:blur(18px);
-
     -webkit-backdrop-filter:blur(18px);
 
-    border:
-    1px solid rgba(255,255,255,0.5);
+    border:1px solid rgba(255,255,255,0.65);
 
     padding:26px;
-
     border-radius:24px;
 
-    max-width:320px;
-
-    box-shadow:
-    0 20px 60px rgba(92,44,145,0.12);
+    box-shadow:0 20px 60px rgba(92,44,145,0.12);
 
     transition:.3s;
 }
@@ -420,15 +415,18 @@ body{
 
 .split{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
+    grid-template-columns:1.3fr .7fr;
+    gap:40px;
     align-items:center;
 }
 
-.split-image img{
+
+ .split-image img{
     width:100%;
     border-radius:36px;
+    opacity:.82;
 }
+
 
 .split-content span{
     color:#5c2c91;
@@ -1555,10 +1553,12 @@ img{
         overflow:hidden !important;
     }
 
-    .main-photo{
-        width:100% !important;
-        max-width:100% !important;
-    }
+
+    }.main-photo img{
+    width:100%;
+    border-radius:36px;
+    opacity:.82;
+}
 
     .photo-card img{
         width:100% !important;
@@ -1585,7 +1585,7 @@ img{
         max-width:92% !important;
     }
 
-}
+
 /* SMALLER MOBILE NAV BUTTON */
 
 @media(max-width:700px){
@@ -1779,4 +1779,191 @@ img{
     .lang-toggle::after{
         display:none;
     }
+}
+/* =========================
+   LAVENDER SIDE VINES - FINAL
+========================= */
+
+html::before,
+html::after{
+    content:"";
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:190px;
+    pointer-events:none;
+    z-index:0;
+    background-repeat:repeat-y;
+    background-size:900px auto;
+    background-position:top center;
+    opacity:.99;
+}
+
+html::before{
+    left:-40px;
+    background-image:url("images/lavender-left-new.png?v=500");
+}
+
+html::after{
+    right:-40px;
+    background-image:url("images/lavender-right-new.png?v=500");
+}
+
+body{
+    position:relative;
+}
+
+.nav,
+.hero,
+.section,
+.trust-strip,
+.loyalty,
+.contact,
+.footer{
+    position:relative;
+    z-index:2;
+}
+
+@media(max-width:900px){
+    html::before,
+    html::after{
+        width:70px;
+        background-size:60px auto;
+        opacity:.99;
+    }
+}
+/* HERO VISUAL FINAL FIX */
+
+.hero-visual{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:18px !important;
+}
+
+.hero-visual .photo-card{
+    width:500px !important;
+    max-width:500px !important;
+}
+
+.hero-visual .floating-card{
+    width:200px !important;
+    max-width:200px !important;
+
+    padding:20px !important;
+
+    min-height:auto !important;
+}
+
+.hero-visual .floating-card p{
+    font-size:15px !important;
+    line-height:1.6 !important;
+}
+
+@media(max-width:900px){
+    .hero-visual{
+        flex-direction:column !important;
+    }
+
+    .hero-visual .photo-card,
+    .hero-visual .floating-card{
+        width:100% !important;
+        max-width:100% !important;
+    }
+}
+/* FINAL HERO BALANCE FIX */
+
+.hero{
+    width:92% !important;
+    max-width:1500px !important;
+    grid-template-columns:620px 620px !important;
+    gap:55px !important;
+    justify-content:center !important;
+    align-items:center !important;
+}
+
+.hero-content{
+    max-width:620px !important;
+}
+
+.hero h1{
+    font-size:78px !important;
+    line-height:.95 !important;
+    max-width:620px !important;
+    white-space:normal !important;
+}
+
+.hero-visual{
+    display:flex !important;
+    align-items:flex-end !important;
+    justify-content:flex-start !important;
+    gap:10px !important;
+}
+
+.hero-visual .photo-card{
+    width:9999px !important;
+    max-width:10000px !important;
+}
+
+.hero-visual .floating-card{
+    width:170px !important;
+    max-width:190px !important;
+    padding:18px !important;
+    position:static !important;
+}
+
+.hero-visual .floating-card p{
+    font-size:14px !important;
+    line-height:1.55 !important;
+    margin:8px 0 0 0 !important;
+}
+
+@media(max-width:1100px){
+    .hero{
+        grid-template-columns:1fr !important;
+    }
+}
+/* HERO CARD ABOVE IMAGE WITH POSITION CONTROLS */
+
+.hero-visual{
+    position:relative !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+}
+
+.hero-visual .photo-card{
+    width:500px !important;
+    max-width:500px !important;
+}
+
+.hero-visual .floating-card{
+    position:absolute !important;
+
+    top:-104px !important;
+    left:120px !important;
+
+    bottom:auto !important;
+    right:auto !important;
+
+    width:340px !important;
+    max-width:320px !important;
+
+    padding:20px !important;
+    z-index:0 !important;
+}
+/* HERO IMAGE POSITION CONTROLS */
+
+.hero-visual .photo-card{
+    position:relative !important;
+
+    top:70px !important;
+    left:0px !important;
+
+    bottom:auto !important;
+    right:auto !important;
+
+    width:500px !important;
+    max-width:500px !important;
+    height:310px !important;
 }
